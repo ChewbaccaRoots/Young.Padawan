@@ -26,3 +26,18 @@ def soma_matrizes(m1, m2):
             result.append(linha)
         return result
 
+#Função que recebe uma matriz e imprime linha a linha
+
+def imprime_matriz(matriz):
+    for linha in matriz:
+        for elemento in linha[:-1]:
+            print(elemento, end=" ")
+        print(linha[-1])
+        
+#Função que define se as matrizes m1 e m2 são multiplicáveis
+
+def sao_multiplicaveis(m1, m2):
+    if len(m1[0]) == len(m2):
+        return True
+    else:
+        return False
