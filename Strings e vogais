@@ -1,4 +1,4 @@
-#Função que recebe uma lista de strings com nome de pessoas como parâmetro e devolve o nome mais curto presente na lista.
+#função que recebe uma lista de strings com nome de pessoas como parâmetro e devolve o nome mais curto presente na lista.
 
 def menor_nome(nomes):
     menor_nome = nomes[0].strip().capitalize()
@@ -8,7 +8,7 @@ def menor_nome(nomes):
             menor_nome = nome
     return menor_nome
     
-#Função que recebe uma frase (uma string) como parâmetro e devolve uma string com as letras maiúsculas que existem nesta frase, na ordem em que elas aparecem.
+#função que recebe uma frase (uma string) como parâmetro e devolve uma string com as letras maiúsculas que existem nesta frase, na ordem em que elas aparecem.
 
 def maiusculas(frase):
     letras_maiusculas = ''
@@ -17,7 +17,7 @@ def maiusculas(frase):
             letras_maiusculas += letra
     return letras_maiusculas
     
-#Função que recebe como primeiro parâmetro uma string contendo uma frase e como segundo parâmetro uma outra string.
+#função que recebe como primeiro parâmetro uma string contendo uma frase e como segundo parâmetro uma outra string.
 
 def conta_letras(frase, contar="vogais"):
     vogais = 'aeiou'
@@ -29,7 +29,7 @@ def conta_letras(frase, contar="vogais"):
     else:
         return "Tipo de letra inválido. Escolha 'vogais' ou 'consoantes'."
 
-#Função que recebe uma lista de strings como parâmetro e devolve o primeiro string na ordem lexicográfica.
+#função que recebe uma lista de strings como parâmetro e devolve o primeiro string na ordem lexicográfica.
 
 def primeiro_lex(lista):
     return sorted(lista)[0]
